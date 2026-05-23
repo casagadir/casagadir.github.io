@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Khadija | Casagadir - Réservations</title>
+    <!-- Tailwind CSS pour un design moderne et responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Polices de caractères élégantes via Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .serif { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-[#fdfbf7] text-stone-800 antialiased flex flex-col min-h-screen">
+
+    <!-- BARRE DE NAVIGATION -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-stone-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold tracking-wide serif text-amber-900">Casagadir</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-stone-600">
+                <a href="index.html#appartement-1" class="hover:text-amber-800 transition">Appartement 1</a>
+                <a href="index.html#appartement-2" class="hover:text-amber-800 transition">Appartement 2</a>
+                <a href="contact.html" class="hover:text-amber-800 transition font-semibold text-amber-800">Contact (Khadija)</a>
+            </nav>
+            <a href="index.html" class="bg-amber-800 hover:bg-amber-900 text-white text-xs uppercase tracking-wider font-semibold px-5 py-3 rounded-lg transition shadow-md">Voir les appartements</a>
+        </div>
+    </header>
+
+    <!-- PAGE DE CONTACT PRINCIPALE AVEC FORMULAIRE REEL -->
+    <main class="flex-grow bg-stone-50 py-16 px-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-stone-100">
+            
+            <div class="text-center space-y-4 mb-12">
+                <span class="text-xs font-bold tracking-widest uppercase text-amber-700">Votre Interlocutrice Dédiée</span>
+                <h2 class="text-4xl font-bold serif text-stone-900">Contactez Casagadir</h2>
+                <div class="w-16 h-1 bg-amber-700 mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <!-- Profil de Khadija -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12 pb-8 border-b border-stone-100">
+                <div class="w-24 h-24 rounded-full bg-amber-100 text-amber-900 flex items-center justify-center text-3xl font-bold border-2 border-amber-700 shadow-md">
+                    K
+                </div>
+                <div class="text-center sm:text-left space-y-1">
+                    <h3 class="text-2xl font-semibold text-stone-900">Khadija</h3>
+                    <p class="text-stone-500 font-light text-sm">Gestionnaire de votre séjour & accueil personnalisé à Agadir</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Informations directes cliquables -->
+                <div class="space-y-6">
+                    <h4 class="text-lg font-semibold text-stone-800">Coordonnées</h4>
+                    <p class="text-stone-600 text-sm leading-relaxed font-light">
+                        Khadija est à votre entière disposition pour planifier votre arrivée, répondre à vos questions sur les équipements ou vous conseiller sur les meilleures activités d'Agadir.
+                    </p>
+                    
+                    <div class="space-y-4 pt-4">
+                        <a href="tel:+212600000000" class="flex items-center space-x-4 text-stone-700 hover:text-amber-800 transition group">
+                            <span class="bg-amber-50 p-3 rounded-xl text-xl group-hover:bg-amber-100 smooth-transition">📞</span>
+                            <div>
+                                <p class="text-xs text-stone-400 font-medium">Téléphone / WhatsApp</p>
+                                <p class="text-sm font-semibold">+212 6 00 00 00 00</p>
+                            </div>
+                        </a>
+                        <a href="mailto:khadija@casagadir.com" class="flex items-center space-x-4 text-stone-700 hover:text-amber-800 transition group">
+                            <span class="bg-amber-50 p-3 rounded-xl text-xl group-hover:bg-amber-100 smooth-transition">✉️</span>
+                            <div>
+                                <p class="text-xs text-stone-400 font-medium">Adresse Email</p>
+                                <p class="text-sm font-semibold">khadija@casagadir.com</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FORMULAIRE D'ENVOI REEL (Optimisé pour la capture Netlify) -->
+                <div>
+                    <!-- L'attribut data-netlify="true" permet à Netlify de capter les envois du formulaire automatiquement et sans code ! -->
+                    <form name="contact-casagadir" method="POST" data-netlify="true" class="space-y-4">
+                        <h4 class="text-lg font-semibold text-stone-800 mb-2">Lui envoyer un message</h4>
+                        
+                        <div>
+                            <label class="block text-xs font-medium text-stone-500 mb-1">Votre Nom & Prénom</label>
+                            <input type="text" name="name" required class="w-full border border-stone-200 rounded-lg p-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-700/50">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-xs font-medium text-stone-500 mb-1">Votre Adresse Email</label>
+                            <input type="email" name="email" required class="w-full border border-stone-200 rounded-lg p-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-700/50">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-stone-500 mb-1">Numéro de Téléphone (Optionnel)</label>
+                            <input type="text" name="phone" class="w-full border border-stone-200 rounded-lg p-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-700/50">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-xs font-medium text-stone-500 mb-1">Votre Message</label>
+                            <textarea name="message" rows="4" required class="w-full border border-stone-200 rounded-lg p-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-700/50" placeholder="Bonjour Khadija, je souhaiterais réserver..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-amber-800 hover:bg-amber-900 text-white font-medium py-3.5 px-4 rounded-xl transition shadow-md cursor-pointer text-sm tracking-wide uppercase">
+                            Envoyer la demande
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-center pt-8 mt-12 border-t border-stone-100">
+                <a href="index.html" class="text-sm text-amber-800 hover:underline font-medium">← Retourner à la page d'accueil des appartements</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-900 text-stone-400 py-8 text-center text-sm">
+        <p>© 2026 Casagadir. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
